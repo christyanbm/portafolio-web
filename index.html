@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Guadalupe Blas Martinez | Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">CGBM</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#education" class="nav-link">Educación</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#experience" class="nav-link">Experiencia</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#certifications" class="nav-link">Certificaciones</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="about">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <i class="fas fa-user-graduate"></i>
+      </div>
+      <h1 class="hero-title">Christian Guadalupe</h1>
+      <h1 class="hero-title">Blas Martinez</h1>
+      <p class="hero-subtitle">Estudiante de Ingeniería en Sistemas Computacionales</p>
+      <p class="hero-description">
+        Apasionado por el desarrollo web, bases de datos y la ciberseguridad.
+        Buen criterio de diseño, trabajo en equipo y soluciones creativas.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Contáctame</a>
+        <a href="#projects" class="btn btn-outline">Ver Proyectos</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Desplázate</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Educación</h2>
+      <div class="underline"></div>
+      <div class="edu-card">
+        <div class="edu-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="edu-info">
+          <h3>Ingeniería en Sistemas Computacionales</h3>
+          <p class="edu-status">Cursando actualmente</p>
+          <p class="edu-detail"><i class="fas fa-star"></i> Promedio: 86.02</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="underline"></div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Lenguajes</h3>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Python</span><span>PHP</span><span>SQL</span><span>Java</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+          <div class="skill-tags">
+            <span>FlutterFlow</span><span>Laravel</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>SQL Server</span><span>Firebase (Firestore)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experiencia Laboral</h2>
+      <div class="underline"></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2022 - 2023</div>
+            <h3>Wigstop</h3>
+            <p class="timeline-location">Matamoros, Tamaulipas</p>
+            <p class="timeline-role">Cocinero</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2021 - 2022</div>
+            <h3>Parcker</h3>
+            <p class="timeline-location">Matamoros, Tamaulipas</p>
+            <p class="timeline-role">Operador General</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Ago 2020 - Dic 2020</div>
+            <h3>Operador General</h3>
+            <p class="timeline-location">Matamoros, Tamaulipas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Proyectos Académicos</h2>
+      <div class="underline"></div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3>Sistema de Horarios Académicos</h3>
+          <p class="project-tech">Laravel · MVC · Diseño Responsivo</p>
+          <ul class="project-features">
+            <li>CRUD para gestión de horarios, profesores y asignaturas</li>
+            <li>Arquitectura MVC y diseño responsivo</li>
+            <li>Desarrollado en Programación Web Avanzada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">Certificaciones y Cursos</h2>
+      <div class="underline"></div>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Certificación en Ciberseguridad (Analista de ciberseguridad Nivel I)</h3>
+          <h2 class="cert-subtitle">Instituto Tecnológico de Ciudad Victoria</h2>
+
+          <p>Operaciones de ciberseguridad, monitoreo de redes, detección de amenazas y respuesta ante incidentes.</p>
+          <span class="cert-date">Diciembre 2025 · Matamoros, Tamaulipas</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Desarrollo con Mendix</h3>
+          <h2 class="cert-subtitle">Instituto Tecnológico de Ciudad Victoria</h2>
+          <p>Curso de desarrollo de aplicaciones empresariales con Mendix.</p>
+          <span class="cert-date">Agosto 2024</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+          <h3>Apoyo Técnico Informático</h3>
+          <p>LX Congreso Nacional de Entomología · Academia Entomológica de México, A.C. / TecNM Campus Cd. Victoria</p>
+          <span class="cert-date">22-25 Junio 2025 · Cd. Victoria, Tamaulipas</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-chalkboard-user"></i></div>
+          <h3>Ponente · VIII Congreso Nacional</h3>
+          <p>Investigación en Ciencia e Innovación de Tecnologías Productivas</p>
+          <p><em>"Implantación de honeypots para la detección de ataques en redes"</em></p>
+          <span class="cert-date">23-24 Octubre 2025 · Instituto Tecnológico de Ciudad Altamirano</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="underline"></div>
+      <div class="contact-content">
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Ubicación</h3>
+          <p>Ciudad Victoria, Tamaulipas, México</p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <h3>Teléfono</h3>
+          <p><a href="tel:+528682200720">+52 868 220 0720</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Correo</h3>
+          <p><a href="mailto:christblas0511@gmail.com">christblas0511@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Christian Guadalupe Blas Martinez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
