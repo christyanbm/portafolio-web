@@ -708,3 +708,45 @@ a:hover {
     font-size: 0.85rem;
   }
 }
+
+/* Botones de contacto dentro de las cards */
+.whatsapp-btn,
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-btn i,
+.email-btn i {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: #fff;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c7e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.email-btn {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.email-btn:hover {
+  background-color: var(--primary-dark);
+  color: #fff;
+  transform: translateY(-2px);
+}
