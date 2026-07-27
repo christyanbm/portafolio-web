@@ -594,6 +594,13 @@ a:hover {
   margin-bottom: 8px;
 }
 
+.cert-subtitle {
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
 .cert-card p {
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -764,12 +771,12 @@ a:hover {
 
 .contact-card .whatsapp-btn {
   background-color: #25d366;
-  color: #000;
+  color: #fff;
 }
 
 .contact-card .whatsapp-btn:hover {
   background-color: #128c7e;
-  color: #000;
+  color: #fff;
   transform: translateY(-2px);
 }
 
