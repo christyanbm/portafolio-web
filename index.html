@@ -4,13 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christian Guadalupe Blas Martinez | Portafolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Christian Guadalupe Blas Martinez | Desarrollador Web Full Stack</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236c63ff'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='42' fill='white'%3ECGBM%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#6c63ff">
+  <meta name="description" content="Portafolio profesional de Christian Blas Martinez — Desarrollador Web Full Stack, especializado en Laravel, JavaScript, bases de datos y ciberseguridad. Disponible para proyectos y colaboraciones.">
+  <meta name="keywords" content="desarrollador web, portfolio, Laravel, JavaScript, PHP, SQL, ciberseguridad, Full Stack, Matamoros, Tamaulipas">
+  <meta name="author" content="Christian Guadalupe Blas Martinez">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Christian Blas Martinez | Desarrollador Web Full Stack">
+  <meta property="og:description" content="Portafolio profesional — Laravel, JavaScript, bases de datos y ciberseguridad. Disponible para proyectos y colaboraciones.">
+  <meta property="og:url" content="https://tudominio.com">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Christian Blas Martinez | Desarrollador Web Full Stack">
+  <meta name="twitter:description" content="Portafolio profesional — Laravel, JavaScript, bases de datos y ciberseguridad. Disponible para proyectos y colaboraciones.">
+  <meta name="twitter:creator" content="@ChristiblasMtz">
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Christian Guadalupe Blas Martinez",
+    "jobTitle": "Desarrollador Web Full Stack",
+    "description": "Estudiante de Ingeniería en Sistemas Computacionales, especializado en desarrollo web, bases de datos y ciberseguridad.",
+    "url": "https://tudominio.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad Victoria",
+      "addressRegion": "Tamaulipas",
+      "addressCountry": "MX"
+    },
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "Python", "Java", "SQL", "MySQL", "Firebase", "Ciberseguridad"],
+    "email": "christblas0511@gmail.com",
+    "telephone": "+52-868-220-0720"
+  }
+  </script>
 </head>
 
 <body>
+  <a href="#about" class="skip-link">Saltar al contenido principal</a>
   <nav class="navbar">
     <div class="nav-container">
       <a href="#" class="nav-logo">CGBM</a>
@@ -23,7 +63,7 @@
         <li><a href="#certifications" class="nav-link">Certificaciones</a></li>
         <li><a href="#contact" class="nav-link">Contacto</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menú">
+      <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -35,8 +75,7 @@
       <div class="hero-avatar">
         <i class="fas fa-user-graduate"></i>
       </div>
-      <h1 class="hero-title">Christian Guadalupe</h1>
-      <h1 class="hero-title">Blas Martinez</h1>
+      <h1 class="hero-title">Christian Guadalupe Blas Martinez</h1>
       <p class="hero-subtitle">Estudiante de Ingeniería en Sistemas Computacionales</p>
       <p class="hero-description">
         Soy un desarrollador web jr. Apasionado por el desarrollo web, bases de datos y la ciberseguridad.
@@ -206,7 +245,7 @@
           <h3>Teléfono</h3>
           <p><a href="tel:+528682200720">+52 868 220 0720</a></p>
           <a href="https://wa.me/+528682200720?text=Hola%2C%20en%20que%20te%20ayudo%3F" class="whatsapp-btn"
-            target="_blank">
+            target="_blank" rel="noopener noreferrer">
             <i class="fab fa-whatsapp"></i> Escríbeme por WhatsApp
           </a>
         </div>
@@ -224,7 +263,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Christian Guadalupe Blas Martinez. Todos los derechos reservados.</p>
+      <p>&copy; <span id="year"></span> Christian Guadalupe Blas Martinez. Todos los derechos reservados.</p>
     </div>
   </footer>
 
